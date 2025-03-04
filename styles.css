@@ -4,6 +4,9 @@
     --play-area-color: #22628295;
     --play-area-button-color: #417a96ca;
     --dark-play-area-color: #396479d5;
+    --play-area-reveal-button-text: #417a96ca;
+    --dark-play-reveal-area-color: #396479d5;
+    
 }
 
 *{
@@ -70,6 +73,7 @@ body{
     height: 2rem;
     font-size: 1rem;
     padding: 0.3rem;
+    margin-right: 0.3rem;
     border-radius: 0.4rem;
     align-self: right;
 }
@@ -78,6 +82,24 @@ body{
     cursor: pointer;
     background-color: var(--dark-play-area-color);
 }
+
+#revealbtn{
+    background-color: rgba(215, 244, 255, 0.414);
+    color: white;
+    width: 4rem;
+    height: 2rem;
+    font-size: 1rem;
+    padding: 0.3rem;
+    border-radius: 0.4rem;
+    align-self: right;
+}
+
+#revealbtn:hover{
+    cursor: pointer;
+    background-color: rgba(215, 244, 255, 0.505);
+}
+
+
 
 @media (max-width: 786px){
     .play-area{

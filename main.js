@@ -22,6 +22,12 @@ function caclRandNum(min, max){
 // checking to see what number was generated and if the fn works
 console.log(caclRandNum(min, max));
 
+// logic to reveal the number... work in progress
+// function revealNum(){
+//     document.getElementById("revealbtn").value = `${caclRandNum(min, max)}`
+//     document.getElementById("revealbtn").childNodes[0].nodeValue=`${caclRandNum(min, max)}`;
+// }
+
 // main logic for the game
 function mainGame(){
     guess = document.getElementById("guess").value;
