@@ -27,5 +27,5 @@ function mainGame(){
     guess = document.getElementById("guess").value;
     console.log(guess);
 
-    guess == caclRandNum(min, max) ? alert("You win!") : alert("You lose!");
+    guess == caclRandNum(min, max) ? alert("You win!") : alert(`You lose! The number was ${caclRandNum(min, max)}`);
 }
