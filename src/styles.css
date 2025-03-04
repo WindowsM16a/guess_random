@@ -48,6 +48,10 @@ body{
     width: 60%;
 }
 
+#guess::placeholder{
+    color: rgba(51, 108, 125, 0.53);
+}
+
 #guess:focus{
     outline: none;
 }
