@@ -34,10 +34,10 @@ function revealNum(){
 // main logic for the game
 function mainGame(){
 
-    console.log(randNumDecimals);
+    console.log(`random number = ${randNumDecimals}`);
 
     guess = document.getElementById("guess").value;
-    console.log(guess);
+    console.log(`user guess = ${guess}`);
 
     guess == randNumDecimals ? alert("You win!") : alert(`You lose! The number was ${randNumDecimals}`);
 
