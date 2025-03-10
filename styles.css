@@ -92,6 +92,7 @@ body{
     padding: 0.3rem;
     border-radius: 0.4rem;
     align-self: right;
+    display: none;
 }
 
 #revealbtn:hover{
