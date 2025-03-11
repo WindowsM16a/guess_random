@@ -38,7 +38,7 @@ function sleep(ms) {
 }
 
 function revealNum(){
-    console.log('hello')
+    // console.log('hello')
     const button = document.getElementById('revealbtn');
     
     button.innerText = `${randomNumber}`;
