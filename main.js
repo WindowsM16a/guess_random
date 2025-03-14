@@ -4,9 +4,11 @@
 const min = 1;
 const max = 10;
 const form = document.getElementById('guessForm');
-let guess
+let guess = [];
 let randomNumber;
 let tries = 3;
+let triesParagraph;
+let previousGuess;
 
 // function to generate random number
 function randNumGen(min, max){
@@ -51,14 +53,19 @@ function revealNum(){
 function mainGame(){
 
     const revealButton = document.getElementById('revealbtn')
+    const guesses = [];
 
     if (tries == 2){
         revealButton.style.display = 'inline-block'
+
     }
 
     // console.log(`random number = ${randomNumber}`);
 
     guess = document.getElementById("guess").value;
+    triesParagraph = document.getElementById('tries');
+    previousGuess = document.getElementById('previousGuess');
+
 
     // validate user input
     if(!validateInput(guess)){
@@ -77,10 +84,14 @@ function mainGame(){
     } else if (tries > 1 && tries <= 3 ){
         --tries;
         alert(`Wrong guess! ${tries} ${tries == 1 ? 'try' : 'tries'} left`)
+        triesParagraph.innerText = `${tries} ${tries == 1? 'try': 'tries'} left`;
         
     } else {
         alert('Game Over')
         randNumGen(min, max)
         revealButton.style.display = 'none'
     }
+
+    // guesses.push(guess)
+    // previousGuess.innerText = `Previous ${guess.length > 1 ? 'guesses' : 'guess'}: ${guesses.join(', ')}`;
 }

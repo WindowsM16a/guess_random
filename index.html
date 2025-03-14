@@ -20,16 +20,17 @@
             <h1>Random Number Guesser</h1>
             <p>Enter your guess from 1.00 to 10.00 with 2 decimal places.</p>
             <form action="#" id="guessForm">
-                <label for="guess" name="guess" id="guessID"> Enter your guess <br>
+                <label for="guess" name="guess" id="guessID"> Enter your guess <br> 
                     <input type="text" id="guess" placeholder="1.10">
                 </label>
                 <button id="submitbtn" type="submit" onclick="mainGame()">Submit</button>
                 <button id="revealbtn" onclick="revealNum()">Reveal</button>
+                <p id="previousGuess">Previous Guesses:</p>
+                <div class="tries-class">
+                    <p id="tries">3 tries left</p>
+                </div>
             </form>
         </div>
-    </main>
-    <footer>
-        
-    </footer>
+    </main>Z
 </body>
 </html>
