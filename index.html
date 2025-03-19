@@ -23,14 +23,16 @@
                 <label for="guess" name="guess" id="guessID"> Enter your guess <br> 
                     <input type="text" id="guess" placeholder="1.10">
                 </label>
-                <button id="submitbtn" type="submit" onclick="mainGame()">Submit</button>
-                <button id="revealbtn" onclick="revealNum()">Reveal</button>
+                <div class="button-container">
+                    <button id="submitbtn" type="submit" onclick="mainGame()">Submit</button>
+                    <button id="revealbtn" onclick="revealNum()">Reveal</button>
+                </div>
                 <p id="previousGuess">Previous Guesses:</p>
                 <div class="tries-class">
                     <p id="tries">3 tries left</p>
                 </div>
             </form>
         </div>
-    </main>Z
+    </main>
 </body>
 </html>
