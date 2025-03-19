@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // initial call to generate random number
     randomNumber = randNumGen(min, max);
-    console.log("Game started with random number:", randomNumber);
+    // console.log("Game started with random number:", randomNumber);
     
     // event listener for enter key to submit user guess
     form?.addEventListener('keydown', function(event) {

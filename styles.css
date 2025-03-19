@@ -35,6 +35,12 @@ body{
     font-family: 'Poppins';
 }
 
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .play-area{
     color: white;
     background-color: var(--play-area-color);
@@ -128,11 +134,13 @@ body{
 @media (max-width: 786px){
     .play-area{
         max-width: 90%;
+        align-self: center;
     }
 }
 @media (max-width: 480px){
     .play-area{
-        max-width: 95%;
+        width: 85%;
+        align-self: center;
         padding: 1rem;
     }
 }
