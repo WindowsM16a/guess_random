@@ -92,7 +92,8 @@ document.addEventListener("DOMContentLoaded", function () {
 				guesses.length > 1 ? "guesses" : "guess"
 			}: ${guesses.join(", ")}`;
 		} else {
-			alert(`Game Over! The number was ${randomNumber} \n New game starting`);
+			alert(`Game Over! The number was ${randomNumber}`);
+			alert("New game starting");
 			randomNumber = randNumGen(min, max);
 			revealButton.style.display = "none";
 			document.getElementById("guess").value = "";
