@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	// event listener for enter key to submit user guess
 	form?.addEventListener("keydown", function (event) {
-		if (event.key === "Enter" || event.keyCode === 13) {
+		if (event.key === "Enter") {
 			event.preventDefault(); // Prevents form submission
 			mainGame();
 		}

@@ -1,146 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-:root{
-    --play-area-color: #22628295;
-    --play-area-button-color: #417a96ca;
-    --dark-play-area-color: #396479d5;
-    --play-area-reveal-button-text: #417a96ca;
-    --dark-play-reveal-area-color: #396479d5;
-    
+:root {
+	--play-area-color: #22628295;
+	--play-area-button-color: #417a96ca;
+	--dark-play-area-color: #396479d5;
+	--play-area-reveal-button-text: #417a96ca;
+	--dark-play-reveal-area-color: #396479d5;
 }
 
-*{
-    margin: 0;
-    border: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
 }
 
-html, body{
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+html,
+body {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
 }
 
-body{
-    background-image: url('./imgs/wallpaper.jpg');
-    backdrop-filter: blur(0.1rem);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Poppins';
+body {
+	background-image: url("./imgs/wallpaper.jpg");
+	backdrop-filter: blur(0.1rem);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Poppins";
 }
 
-main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.play-area{
-    color: white;
-    background-color: var(--play-area-color);
-    backdrop-filter: blur(0.08rem);
-    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
-    padding: 2rem;
-    border-radius: 1rem;
-    width: 80%;
-    max-width: 31.25rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    gap: 1rem;
+.play-area {
+	color: white;
+	background-color: var(--play-area-color);
+	backdrop-filter: blur(0.08rem);
+	box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+	padding: 2rem;
+	border-radius: 1rem;
+	width: 80%;
+	max-width: 31.25rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+	gap: 1rem;
 }
 
-#guess{
-    padding: 0.4rem;
-    border-radius: 0.5rem;
-    width: 65%;
+#guess {
+	padding: 0.4rem;
+	border-radius: 0.5rem;
+	font-size: 16px;
+	width: 65%;
 }
 
-#guess::placeholder{
-    color: rgba(51, 108, 125, 0.53);
+#guess::placeholder {
+	color: rgba(51, 108, 125, 0.53);
 }
 
-#guess:focus{
-    outline: none;
+#guess:focus {
+	outline: none;
 }
 
-#guessID{
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-    padding-bottom: 0.3rem;
-    width: 100%;
+#guessID {
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
+	padding-bottom: 0.3rem;
+	width: 100%;
 }
 
 .button-container {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
+	display: flex;
+	gap: 0.5rem;
+	margin-top: 0.5rem;
 }
 
-#submitbtn{
-    background-color: var(--play-area-button-color);
-    color: white;
-    width: 4rem;
-    height: 2rem;
-    font-size: 1rem;
-    padding: 0.3rem 0.6rem;
-    border-radius: 0.4rem;
-    flex-grow: 0;
+#submitbtn {
+	background-color: var(--play-area-button-color);
+	color: white;
+	width: 4rem;
+	height: 2rem;
+	font-size: 1rem;
+	padding: 0.3rem 0.6rem;
+	border-radius: 0.4rem;
+	flex-grow: 0;
 }
 
-#submitbtn:hover{
-    cursor: pointer;
-    background-color: var(--dark-play-area-color);
+#submitbtn:hover {
+	cursor: pointer;
+	background-color: var(--dark-play-area-color);
 }
 
-#revealbtn{
-    background-color: rgba(215, 244, 255, 0.414);
-    color: white;
-    width: 4rem;
-    height: 2rem;
-    font-size: 1rem;
-    padding: 0.3rem;
-    border-radius: 0.4rem;
-    align-self: right;
-    display: none;
+#revealbtn {
+	background-color: rgba(215, 244, 255, 0.414);
+	color: white;
+	width: 4rem;
+	height: 2rem;
+	font-size: 1rem;
+	padding: 0.3rem;
+	border-radius: 0.4rem;
+	align-self: right;
+	display: none;
 }
 
-#revealbtn:hover{
-    cursor: pointer;
-    background-color: rgba(215, 244, 255, 0.505);
+#revealbtn:hover {
+	cursor: pointer;
+	background-color: rgba(215, 244, 255, 0.505);
 }
 
-#tries{
-    margin-top: 0.5rem;
-    font-size: 0.7rem;
+#tries {
+	margin-top: 0.5rem;
+	font-size: 0.7rem;
 }
 
-#previousGuess{
-    display: inline-block;
-    font-size: 0.85rem;
-    width: 100%;
-    word-wrap: break-word;
+#previousGuess {
+	display: inline-block;
+	font-size: 0.85rem;
+	width: 100%;
+	word-wrap: break-word;
 }
 
-
-@media (max-width: 786px){
-    .play-area{
-        max-width: 90%;
-        align-self: center;
-    }
+@media (max-width: 786px) {
+	.play-area {
+		max-width: 90%;
+		align-self: center;
+	}
 }
-@media (max-width: 480px){
-    .play-area{
-        width: 85%;
-        align-self: center;
-        padding: 1rem;
-    }
+@media (max-width: 480px) {
+	.play-area {
+		width: 85%;
+		align-self: center;
+		padding: 1rem;
+	}
 }
